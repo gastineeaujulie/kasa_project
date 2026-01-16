@@ -1,0 +1,15 @@
+.home-banner {
+  max-width: 1240px;
+  width: 100%;
+  height: 223px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 25px;
+  margin-bottom: 40px;
+}
+.home-title {
+  font-size: 36px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 80px;
+}
