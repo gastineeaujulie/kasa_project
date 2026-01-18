@@ -2,7 +2,7 @@
 import logements from '../data/logements.json';
 import homepage from '../assets/homepage.png';
 import LogementItem from '../components/LogementItem';
-import '../styles/Home.css';
+import '../styles/Home.scss';
 
 export default function Home() {
   //   const [count, setCount] = useState(0);
