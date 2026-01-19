@@ -1,7 +1,7 @@
 // import { useState } from 'react'
 import './styles/App.scss';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Banner from './components/Banner.jsx';
+import { Routes, Route } from 'react-router-dom';
+import Header from './components/Header.jsx';
 import Home from './pages/Home.jsx';
 import About from './pages/About.jsx';
 
@@ -10,13 +10,11 @@ function App() {
 
   return (
     <>
-      <Banner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-        </Routes>
-      </BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path="/home" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
     </>
   );
 }

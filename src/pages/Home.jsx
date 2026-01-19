@@ -1,4 +1,5 @@
 // import { useState } from 'react';
+import React from 'react';
 import logements from '../data/logements.json';
 import homepage from '../assets/homepage.png';
 import LogementItem from '../components/LogementItem';
@@ -13,7 +14,7 @@ export default function Home() {
         <img
           src={homepage}
           alt="paysage montagneux au bord de l'ocean"
-          className="homepage-img"
+          className="home-img"
         />
         <h1 className="home-title">Chez vous, partout et ailleurs</h1>
       </div>
