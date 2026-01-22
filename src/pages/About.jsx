@@ -8,6 +8,10 @@ import vector from '../assets/vector.svg';
 export default function About() {
   const [isOpen, setIsOpen] = useState(false);
 
+  const toggleCollapse = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <>
       <div className="about-banner">
@@ -21,11 +25,16 @@ export default function About() {
         <ul className="about-collapse-list">
           {valeurs.map((valeur) => (
             <li key={valeur.id} className="about-collapse-item">
-              <button onClick={() => setIsOpen(!isOpen)} className="about-btn">
+              <button
+                onClick={() => toggleCollapse(valeur.id)}
+                className="about-btn"
+              >
                 {valeur.id}
-                <img src={vector} alt="vector-icone" />
+                <img src={vector} alt="vector-icone" className="about-icone" />
               </button>
-              {isOpen && <div>{valeur.description}</div>}
+              {isOpen && (
+                <div className="about-description">{valeur.description}</div>
+              )}
             </li>
           ))}
         </ul>

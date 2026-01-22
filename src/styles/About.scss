@@ -27,7 +27,7 @@
   width: 100%;
   margin: 0 auto;
 
-  & .about-collapse-list {
+  .about-collapse-list {
     list-style-type: none;
     margin: 0;
     display: flex;
@@ -35,29 +35,29 @@
     gap: 30px;
   }
 
-  & .about-collapse-item {
+  .about-collapse-item {
     border-radius: 5px;
     overflow: hidden;
 
-    & .about-btn {
+    .about-btn {
       width: 100%;
       background-color: #ff6060;
       color: #ffffff;
       border: none;
-      width: 100%;
       height: 54px;
-      text-align: left;
       font-size: 24px;
       font-weight: bold;
       cursor: pointer;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
     }
 
-    //     & div {
-    //       padding: 15px 20px;
-    //       background-color: #ffffff;
-    //       font-size: 16px;
-    //       line-height: 1.5;
-    //       color: #555555;
-    //     }
+    .about-description {
+      padding: 15px 20px;
+      font-size: 18px;
+      line-height: 1.5;
+    }
   }
 }

@@ -8,7 +8,7 @@ export default function Header() {
     <div className="header-container">
       <img src={logo} alt="Kasa logo" className="header-logo" />
       <nav className="nav-button">
-        <Link to="/home" className="nav-text">
+        <Link to="/" className="nav-text">
           Accueil
         </Link>
         <Link to="/about" className="nav-text">
