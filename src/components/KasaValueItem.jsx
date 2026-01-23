@@ -2,15 +2,18 @@ import vector from '../assets/vector.svg';
 import { useState } from 'react';
 
 export default function KasaValueItem({ valeur }) {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setItOpen] = useState(false);
 
   const toggleCollapse = () => {
-    setIsOpen(!isOpen);
+    setItOpen(!isOpen);
   };
 
   return (
     <li key={valeur.id} className="about-collapse-item">
-      <button onClick={toggleCollapse} className="about-btn">
+      <button
+        onClick={toggleCollapse}
+        className={`about-btn ${isOpen ? 'open' : ''}`}
+      >
         {valeur.id}
         <img src={vector} alt="vector-icone" className="about-icone" />
       </button>
