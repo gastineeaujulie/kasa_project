@@ -10,7 +10,10 @@ export default function KasaValueItem({ valeur }) {
 
   return (
     <li key={valeur.id} className="about-collapse-item">
-      <button onClick={toggleCollapse} className="about-btn">
+      <button
+        onClick={toggleCollapse}
+        className={`about-btn ${isOpen ? 'open' : ''}`}
+      >
         {valeur.id}
         <img src={vector} alt="vector-icone" className="about-icone" />
       </button>
