@@ -17,7 +17,7 @@ export default function About() {
       <div className="about-container">
         <ul className="about-collapse-list">
           {valeurs.map((valeur) => (
-            <KasaValueItem key={valeur.id} valeur={valeur} />
+            <KasaValueItem key={valeur.name} valeur={valeur} />
           ))}
         </ul>
       </div>
