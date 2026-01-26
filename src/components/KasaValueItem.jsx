@@ -1,4 +1,5 @@
 import vector from '../assets/vector.svg';
+import '../styles/KasaValueItem.scss';
 import { useState } from 'react';
 
 export default function KasaValueItem({ valeur }) {

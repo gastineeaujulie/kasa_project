@@ -35,45 +35,4 @@
     gap: 30px;
     padding: 0;
   }
-
-  .about-collapse-item {
-    border-radius: 5px;
-    overflow: hidden;
-
-    .about-btn {
-      width: 100%;
-      background-color: #ff6060;
-      color: #ffffff;
-      border: none;
-      height: 54px;
-      font-size: 24px;
-      font-weight: bold;
-      cursor: pointer;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 20px;
-
-      .about-icone {
-        transition: transform 0.3s ease;
-        transform: rotate(0deg);
-      }
-
-      &.open .about-icone {
-        transform: rotate(180deg);
-      }
-    }
-
-    .about-description {
-      padding: 15px 20px;
-      font-size: 18px;
-      line-height: 1.5;
-    }
-
-    .about-icone {
-      width: 32px;
-      height: 32px;
-    }
-  }
 }
