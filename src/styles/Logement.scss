@@ -2,46 +2,131 @@
   max-width: 1240px;
   width: 100%;
 
-  .logement-annonce-pictures {
+  .carrousel {
     width: 100%;
-    height: 415px;
-    object-fit: cover;
-  }
+    position: relative;
 
-  .title-description-div {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 20px 0;
-    gap: 10px;
-    width: 635px;
-
-    .logement-title {
-      font-size: 36px;
-      font-weight: 500;
-      color: #ff6060;
+    .logement-picture {
+      border-radius: 25px;
+      width: 100%;
+      height: 415px;
+      object-fit: cover;
     }
 
-    .logement-description {
-      font-size: 18px;
-      font-weight: 500;
-      margin: 0;
+    .btn-group-carrousel {
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      height: 80px;
+      top: 50%;
+      transform: translateY(-50%);
+
+      .btn-carrousel {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+      }
+
+      .previous-icone {
+        transform: rotate(270deg);
+        width: 47px;
+        height: 80px;
+      }
+
+      .next-icone {
+        transform: rotate(90deg);
+        width: 47px;
+        height: 80px;
+      }
     }
   }
 
-  .rating {
+  .description-div {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    gap: 5px;
+    justify-content: space-between;
+    padding: 10px 0px;
 
-    .star {
-      width: 36px;
-      filter: grayscale(100%);
+    .title-description-tag-div {
+      align-items: flex-start;
 
-      &.filled {
-        filter: none;
+      .title-description-div {
+        padding: 20px 0;
+        width: fit-content;
+
+        .logement-title {
+          font-size: 36px;
+          font-weight: 500;
+          color: #ff6060;
+          text-align: left;
+          margin-bottom: 10px;
+        }
+
+        .logement-description {
+          font-size: 18px;
+          font-weight: 500;
+          margin: 0;
+          text-align: left;
+        }
+      }
+
+      .tag-div {
+        display: flex;
+        gap: 10px;
+        width: fit-content;
+        max-width: 100%;
+
+        .tag-item {
+          background-color: #ff6060;
+          color: #ffffff;
+          padding: 5px 10px;
+          border-radius: 10px;
+          font-size: 14px;
+          font-weight: 700;
+        }
+      }
+    }
+
+    .rating-host-div {
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+
+      .rating {
+        justify-content: flex-end;
+        gap: 5px;
+        width: 196px;
+        height: 36px;
+
+        .star {
+          width: 36px;
+          filter: grayscale(100%);
+
+          &.filled {
+            filter: none;
+          }
+        }
+      }
+
+      .host-div {
+        gap: 10px;
+        display: flex;
+        align-items: center;
+        padding: 20px 0px;
+
+        .host-name {
+          font-size: 18px;
+          font-weight: 500;
+          color: #ff6060;
+          flex-wrap: wrap;
+          text-align: left;
+        }
+
+        .host-picture {
+          width: 64px;
+          border-radius: 100%;
+        }
       }
     }
   }
@@ -52,59 +137,17 @@
     justify-content: space-between;
     width: 100%;
     padding: 0;
-  }
 
-  .logement-menu {
-    width: 582px;
+    .logement-menu {
+      width: 582px;
 
-    .equipments-list {
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-      color: #000000;
-      font-size: 18px;
-    }
-  }
-
-  .tag-div {
-    display: flex;
-    gap: 10px;
-    width: fit-content;
-    max-width: 100%;
-
-    .tag-item {
-      background-color: #ff6060;
-      color: #ffffff;
-      padding: 5px 10px;
-      border-radius: 10px;
-      font-size: 14px;
-      font-weight: 700;
-      width: 115px;
-      height: 25px;
-    }
-  }
-
-  .host-div {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    gap: 10px;
-    height: 64px;
-
-    .host-name {
-      font-size: 18px;
-      font-weight: 500;
-      color: #ff6060;
-      flex-wrap: wrap;
-      text-align: left;
-    }
-
-    .host-picture {
-      width: 64px;
-      height: 64px;
-      border-radius: 50%;
-      object-fit: cover;
-      border-radius: 100%;
+      .equipments-list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        color: #000000;
+        font-size: 18px;
+      }
     }
   }
 }

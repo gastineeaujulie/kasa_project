@@ -1,19 +1,33 @@
 import { useState } from 'react';
 import vector from '../assets/vector.svg';
+import '../styles/Logement.scss';
 
-export default function carrousel({ pictures, title }) {
-  const [Img, previousImg] = useState(0);
+export default function Carrousel({ pictures, title }) {
+  const [index, setIndex] = useState(0);
+
+  const prevImage = () => {
+    setIndex(index === 0 ? pictures.length - 1 : index - 1);
+  };
+
+  console.log(index);
+  const nextImage = () => {
+    setIndex(index === pictures.length - 1 ? 0 : index + 1);
+  };
 
   return (
-    <div>
-      <button onClick={() => previousImg(Img[-1])}>
-        {' '}
-        <img src={vector} alt="vector-icone" className="about-icone" />
-      </button>
+    <div className="carrousel">
+      <div className="btn-group-carrousel">
+        <button onClick={prevImage} className="btn-carrousel">
+          <img src={vector} alt="image precedente" className="previous-icone" />
+        </button>
+        <button onClick={nextImage} className="btn-carrousel">
+          <img src={vector} alt="image suivante" className="next-icone" />
+        </button>
+      </div>
       <img
-        src={pictures}
-        alt={`${title} pictures`}
-        className="logement-pictures"
+        src={pictures[index]}
+        alt={`${title} - ${index}`}
+        className="logement-picture"
       />
     </div>
   );

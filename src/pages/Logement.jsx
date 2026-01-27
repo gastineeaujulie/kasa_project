@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import KasaValueItem from '../components/KasaValueItem';
 import '../styles/Logement.scss';
 import Rating from '../components/Rating.jsx';
+import Carrousel from '../components/Carrousel.jsx';
 
 export default function Logement() {
   const { id } = useParams();
@@ -11,30 +12,37 @@ export default function Logement() {
 
   return (
     <div className="logement-annonce-item">
-      <div className="title-description-div">
-        {logement.title && (
-          <div className="logement-title">{logement.title}</div>
-        )}
-        <p className="logement-description">{logement.location}</p>
-      </div>
+      <Carrousel pictures={logement.pictures} title={logement.title} />
 
-      <Rating value={logement.rating} />
-
-      <div className="tag-div">
-        {logement.tags.map((tag) => (
-          <div key={tag} className="tag-item">
-            {tag}
+      <div className="description-div">
+        <div className="title-description-tag-div">
+          <div className="title-description-div">
+            {logement.title && (
+              <div className="logement-title">{logement.title}</div>
+            )}
+            <p className="logement-description">{logement.location}</p>
           </div>
-        ))}
-      </div>
 
-      <div className="host-div">
-        <div className="host-name">{logement.host.name}</div>
-        <img
-          src={logement.host.picture}
-          alt="host-picture"
-          className="host-picture"
-        />
+          <div className="tag-div">
+            {logement.tags.map((tag) => (
+              <div key={tag} className="tag-item">
+                {tag}
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="rating-host-div">
+          <div className="host-div">
+            <div className="host-name">{logement.host.name}</div>
+            <img
+              src={logement.host.picture}
+              alt="host-picture"
+              className="host-picture"
+            />
+          </div>
+          <Rating value={logement.rating} />
+        </div>
       </div>
 
       <ul className="logement-collapse-item">
