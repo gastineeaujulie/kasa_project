@@ -1,5 +1,5 @@
 import logements from '../data/logements.json';
-import { useParams } from 'react-router-dom';
+import { useParams, Navigate } from 'react-router-dom';
 import KasaValueItem from '../components/KasaValueItem';
 import '../styles/Logement.scss';
 import Rating from '../components/Rating.jsx';
@@ -7,8 +7,11 @@ import Carrousel from '../components/Carrousel.jsx';
 
 export default function Logement() {
   const { id } = useParams();
-
   const logement = logements.find((logement) => logement.id === id);
+
+  if (!logement) {
+    return <Navigate to="/error" />;
+  }
 
   return (
     <div className="logement-annonce-item">

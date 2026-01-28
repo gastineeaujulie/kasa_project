@@ -32,3 +32,42 @@
     text-decoration: underline;
   }
 }
+
+@media (max-width: 768px) {
+  .header-container {
+    width: 100%;
+    max-width: 690px;
+  }
+
+  .header-logo {
+    width: 200px;
+  }
+
+  .nav-button {
+    gap: 30px;
+
+    & .nav-text {
+      font-size: 18px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .header-container {
+    width: 100%;
+    max-width: 335px;
+  }
+
+  .header-logo {
+    width: 145px;
+  }
+
+  .nav-button {
+    gap: 26px;
+
+    & .nav-text {
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+  }
+}

@@ -4,6 +4,7 @@ import '../styles/Logement.scss';
 
 export default function Carrousel({ pictures, title }) {
   const [index, setIndex] = useState(0);
+  const total = pictures.length;
 
   const prevImage = () => {
     setIndex(index === 0 ? pictures.length - 1 : index - 1);
@@ -29,6 +30,9 @@ export default function Carrousel({ pictures, title }) {
         alt={`${title} - ${index}`}
         className="logement-picture"
       />
+      <span className="carrousel-counter">
+        {index + 1}/{total}
+      </span>
     </div>
   );
 }

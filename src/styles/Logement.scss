@@ -13,6 +13,16 @@
       object-fit: cover;
     }
 
+    .carrousel-counter {
+      position: absolute;
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: 500;
+      bottom: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
     .btn-group-carrousel {
       position: absolute;
       display: flex;

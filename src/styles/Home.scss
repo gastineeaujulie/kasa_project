@@ -49,3 +49,44 @@
   margin: 0;
   max-width: 1240px;
 }
+
+@media (max-width: 768px) {
+  .home-banner {
+    height: 180px;
+    width: 100%;
+    max-width: 690px;
+    margin: 0;
+
+    .home-title {
+      font-size: 36px;
+    }
+  }
+
+  .logements-list {
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-banner {
+    height: 111px;
+    width: 100%;
+    margin: 0;
+    max-width: 335px;
+
+    .home-title {
+      font-size: 24px;
+      width: 225px;
+      height: 48px;
+      text-align: left;
+      left: 20px;
+      transform: translateY(-50%);
+    }
+  }
+
+  .logements-list {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+}
