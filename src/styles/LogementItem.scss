@@ -8,14 +8,15 @@
 
   .logement-item-cover {
     width: 340px;
+    max-height: 100%;
     height: 340px;
     border-radius: 10px;
   }
 
   .logement-item-title {
     position: absolute;
-    top: 268px;
-    left: 20px;
+    top: 85%;
+    left: 5%;
     font-size: 18px;
     font-weight: 700;
     color: #ffffff;
@@ -27,5 +28,21 @@
 
   & img {
     object-fit: cover;
+  }
+}
+
+@media (max-width: 768px) {
+  .logement-item {
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logement-item {
+    height: 255px;
+
+    .logement-item-title {
+      top: 80%;
+    }
   }
 }

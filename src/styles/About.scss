@@ -36,3 +36,20 @@
     padding: 0;
   }
 }
+
+@media (max-width: 728px) {
+}
+
+@media (max-width: 480px) {
+  .about-banner {
+    height: 111px;
+    width: 100%;
+    margin: 0;
+    max-width: 335px;
+  }
+
+  .about-container {
+    max-width: 335px;
+    width: 100%;
+  }
+}

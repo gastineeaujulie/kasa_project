@@ -161,3 +161,71 @@
     }
   }
 }
+
+@media (max-width: 480px) {
+  .logement-annonce-item {
+    max-width: 335px;
+    width: 100%;
+
+    .carrousel .logement-picture {
+      height: 255px;
+      border-radius: 10px;
+    }
+
+    .description-div {
+      flex-direction: column;
+      gap: 27px;
+
+      .title-description-tag-div {
+        .title-description-div {
+          .logement-title {
+            font-size: 18px;
+          }
+
+          .logement-description {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .rating-host-div {
+        flex-direction: row;
+        justify-content: space-between;
+        height: 33px;
+
+        .rating {
+          height: 18px;
+          width: 98px;
+
+          .star {
+            width: 18px;
+            & .filled {
+              width: 18px;
+            }
+          }
+        }
+
+        .host-div {
+          padding: 0;
+
+          .host-name {
+            font-size: 12px;
+          }
+
+          .host-picture {
+            width: 32px;
+          }
+        }
+      }
+    }
+
+    .logement-collapse-item {
+      flex-direction: column;
+      gap: 20px;
+
+      .logement-menu {
+        width: 100%;
+      }
+    }
+  }
+}
