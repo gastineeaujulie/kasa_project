@@ -30,3 +30,21 @@
     }
   }
 }
+
+@media (max-width: 480px) {
+  .error-page {
+    .error-title {
+      font-size: 96px;
+    }
+
+    & p {
+      font-size: 18px;
+    }
+
+    .back-home {
+      .back-home-link {
+        font-size: 14px;
+      }
+    }
+  }
+}

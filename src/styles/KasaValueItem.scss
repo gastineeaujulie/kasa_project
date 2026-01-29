@@ -39,3 +39,16 @@
     height: 32px;
   }
 }
+
+@media (max-width: 480px) {
+  .about-collapse-item {
+    .about-btn {
+      font-size: 13px;
+      height: 30px;
+    }
+
+    .about-icone {
+      width: 16px;
+    }
+  }
+}

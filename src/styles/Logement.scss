@@ -186,11 +186,18 @@
             font-size: 14px;
           }
         }
+
+        .tag-div {
+          .tag-item {
+            font-size: 10px;
+          }
+        }
       }
 
       .rating-host-div {
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
         height: 33px;
 
         .rating {

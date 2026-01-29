@@ -51,5 +51,8 @@
   .about-container {
     max-width: 335px;
     width: 100%;
+    .about-collapse-list {
+      gap: 20px;
+    }
   }
 }
