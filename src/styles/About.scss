@@ -37,7 +37,17 @@
   }
 }
 
-@media (max-width: 728px) {
+@media (max-width: 768px) {
+  .about-banner {
+    max-width: 690px;
+    width: 100%;
+    height: 180px;
+  }
+
+  .about-container {
+    max-width: 690px;
+    width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
