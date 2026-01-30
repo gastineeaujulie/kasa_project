@@ -242,29 +242,49 @@
     max-width: 335px;
     width: 100%;
 
-    .carrousel .logement-picture {
-      height: 255px;
-      border-radius: 10px;
-    }
+    .carrousel {
+      .btn-group-carrousel {
+        height: 24px;
 
-    .description-div {
-      flex-direction: column;
-      gap: 27px;
-
-      .title-description-tag-div {
-        .title-description-div {
-          .logement-title {
-            font-size: 18px;
-          }
-
-          .logement-description {
-            font-size: 14px;
-          }
+        .previous-icone {
+          width: 24px;
+          height: 24px;
         }
 
-        .tag-div {
-          .tag-item {
-            font-size: 10px;
+        .next-icone {
+          width: 24px;
+          height: 24px;
+        }
+      }
+
+      .carrousel-counter {
+        display: none;
+      }
+
+      .logement-picture {
+        height: 255px;
+        border-radius: 10px;
+      }
+
+      .description-div {
+        flex-direction: column;
+        gap: 27px;
+
+        .title-description-tag-div {
+          .title-description-div {
+            .logement-title {
+              font-size: 18px;
+            }
+
+            .logement-description {
+              font-size: 14px;
+            }
+          }
+
+          .tag-div {
+            .tag-item {
+              font-size: 10px;
+            }
           }
         }
       }
