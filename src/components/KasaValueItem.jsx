@@ -18,7 +18,10 @@ export default function KasaValueItem({ valeur, className }) {
         {valeur.name}
         <img src={vector} alt="vector-icone" className="about-icone" />
       </button>
-      {isOpen && <div className="about-description">{valeur.description}</div>}
+
+      <div className={`about-description ${isOpen ? 'open' : ''}`}>
+        {valeur.description}
+      </div>
     </li>
   );
 }

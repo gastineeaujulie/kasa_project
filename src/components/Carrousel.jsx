@@ -10,7 +10,6 @@ export default function Carrousel({ pictures, title }) {
     setIndex(index === 0 ? pictures.length - 1 : index - 1);
   };
 
-  console.log(index);
   const nextImage = () => {
     setIndex(index === pictures.length - 1 ? 0 : index + 1);
   };
