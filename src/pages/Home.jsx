@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logements from '../data/logements.json';
-import homepage from '../assets/homepage.png';
+import homepage from '../assets/homepage.webp';
 import LogementItem from '../components/LogementItem';
 import '../styles/Home.scss';
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import about from '../assets/about.png';
+import about from '../assets/about.webp';
 import '../styles/About.scss';
 import { valeurs } from '../data/ValeursList.js';
 import KasaValueItem from '../components/KasaValueItem.jsx';
