@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import logements from '../data/logements.json';
 import homepage from '../assets/homepage.webp';
 import LogementItem from '../components/LogementItem';
@@ -18,17 +17,12 @@ export default function Home() {
       </div>
       <ul className="logements-list">
         {logements.map((logement) => (
-          <Link
+          <LogementItem
             key={logement.id}
-            to={`/logement/${logement.id}`}
-            className="logement-item-link"
-          >
-            <LogementItem
-              id={logement.id}
-              cover={logement.cover}
-              title={logement.title}
-            />
-          </Link>
+            id={logement.id}
+            cover={logement.cover}
+            title={logement.title}
+          />
         ))}
       </ul>
     </>
