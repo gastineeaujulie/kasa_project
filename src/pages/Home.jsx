@@ -1,4 +1,3 @@
-import React from 'react';
 import logements from '../data/logements.json';
 import homepage from '../assets/homepage.webp';
 import LogementItem from '../components/LogementItem';

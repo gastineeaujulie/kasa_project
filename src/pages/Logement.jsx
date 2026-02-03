@@ -1,6 +1,6 @@
 import logements from '../data/logements.json';
 import { useParams, Navigate } from 'react-router-dom';
-import KasaValueItem from '../components/KasaValueItem';
+import AccordionMenu from '../components/AccordionMenu.jsx';
 import '../styles/Logement.scss';
 import Rating from '../components/Rating.jsx';
 import Carrousel from '../components/Carrousel.jsx';
@@ -49,14 +49,14 @@ export default function Logement() {
       </div>
 
       <ul className="logement-collapse-item">
-        <KasaValueItem
+        <AccordionMenu
           className="logement-menu"
           valeur={{
             name: 'Description',
             description: logement.description,
           }}
         />
-        <KasaValueItem
+        <AccordionMenu
           className="logement-menu"
           valeur={{
             name: 'Equipements',

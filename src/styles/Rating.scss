@@ -1,0 +1,42 @@
+.rating-host-div {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+
+  .rating {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    width: 196px;
+    height: 36px;
+
+    .star {
+      width: 24px;
+      filter: grayscale(100%);
+
+      &.filled {
+        filter: none;
+      }
+    }
+  }
+
+  .host-div {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    padding: 20px 0px;
+
+    .host-name {
+      font-size: 18px;
+      font-weight: 500;
+      color: #ff6060;
+      flex-wrap: wrap;
+      text-align: left;
+    }
+
+    .host-picture {
+      width: 64px;
+      border-radius: 100%;
+    }
+  }
+}

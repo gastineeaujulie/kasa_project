@@ -9,18 +9,18 @@ import ErrorPage from './components/ErrorPage.jsx';
 import Logement from './pages/Logement.jsx';
 
 function App() {
-  // const [count, setCount] = useState(0)
-
   return (
     <>
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/error" element={<ErrorPage />} />
-        <Route path="/logement/:id" element={<Logement />} />
-        <Route path="*" element={<ErrorPage />} />
-      </Routes>
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/error" element={<ErrorPage />} />
+          <Route path="/logement/:id" element={<Logement />} />
+          <Route path="*" element={<ErrorPage />} />
+        </Routes>
+      </main>
       <Footer />
     </>
   );

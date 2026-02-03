@@ -1,8 +1,8 @@
 import vector from '../assets/vector.svg';
-import '../styles/KasaValueItem.scss';
+import '../styles/AccordionMenu.scss';
 import { useState } from 'react';
 
-export default function KasaValueItem({ valeur, className }) {
+export default function AccordionMenu({ valeur, className }) {
   const [isOpen, setItOpen] = useState(false);
 
   const toggleCollapse = () => {

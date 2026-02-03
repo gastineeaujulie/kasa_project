@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import vector from '../assets/vector.svg';
-import '../styles/Logement.scss';
+import '../styles/Carrousel.scss';
 
 export default function Carrousel({ pictures, title }) {
   const [index, setIndex] = useState(0);
