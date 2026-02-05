@@ -1,5 +1,4 @@
 .about-collapse-item {
-  border-radius: 5px;
   overflow: hidden;
 
   .about-btn {
@@ -16,6 +15,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    border-radius: 5px;
 
     .about-icone {
       transition: transform 0.3s ease;
@@ -35,17 +35,18 @@
     font-size: 18px;
     line-height: 1.5;
     text-align: justify;
+    background-color: #f6f6f6;
 
     transition:
-      max-height 0.3s ease,
-      opacity 0.3s ease,
-      padding 0.3s ease;
+      max-height 0.4s ease-in-out,
+      opacity 0.4s ease-in-out,
+      padding 0.4s ease-in-out;
   }
 
   .about-description.open {
-    max-height: 500px;
+    max-height: 1000px;
     opacity: 1;
-    padding: 15px 20px;
+    padding: 30px 20px;
   }
 
   .about-icone {
@@ -54,11 +55,34 @@
   }
 }
 
+@media (max-width: 768px) {
+  .about-collapse-item {
+    .about-btn {
+      font-size: 16px;
+      height: 40px;
+      border-radius: 10px;
+    }
+
+    .about-description {
+      font-size: 16px;
+    }
+
+    .about-icone {
+      width: 18px;
+    }
+  }
+}
+
 @media (max-width: 480px) {
   .about-collapse-item {
     .about-btn {
       font-size: 13px;
       height: 30px;
+      border-radius: 5px;
+    }
+
+    .about-description {
+      font-size: 13px;
     }
 
     .about-icone {

@@ -5,11 +5,12 @@
   justify-content: center;
   flex-direction: column;
   position: relative;
+  height: 340px;
+  width: 340px;
 
   .logement-item-cover {
-    width: 340px;
-    max-height: 100%;
     height: 340px;
+    width: 340px;
     border-radius: 10px;
   }
 
@@ -33,13 +34,31 @@
 
 @media (max-width: 768px) {
   .logement-item {
-    height: 300px;
+    height: 255px;
+    width: 335px;
+    margin: 0;
+
+    .logement-item-cover {
+      height: 255px;
+      width: 335px;
+    }
+
+    .logement-item-title {
+      top: 80%;
+    }
   }
 }
 
 @media (max-width: 480px) {
   .logement-item {
     height: 255px;
+    width: 335px;
+    margin: 0;
+
+    .logement-item-cover {
+      height: 255px;
+      width: 335px;
+    }
 
     .logement-item-title {
       top: 80%;
