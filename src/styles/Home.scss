@@ -40,19 +40,6 @@
   }
 }
 
-.logements-list {
-  list-style-type: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 35px;
-  padding: 40px;
-  margin: 0;
-  max-width: 1240px;
-  width: 100%;
-  background-color: #f6f6f6;
-  border-radius: 25px;
-}
-
 @media (max-width: 768px) {
   .home-banner {
     height: 180px;
@@ -72,15 +59,6 @@
       font-size: 36px;
     }
   }
-
-  .logements-list {
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
-    max-width: 690px;
-    width: 100%;
-    padding: 30px 0 0 0;
-    background-color: #ffffff;
-  }
 }
 
 @media (max-width: 480px) {
@@ -99,11 +77,5 @@
       left: 20px;
       transform: translateY(-50%);
     }
-  }
-
-  .logements-list {
-    grid-template-columns: 1fr;
-    width: 335px;
-    gap: 20px;
   }
 }

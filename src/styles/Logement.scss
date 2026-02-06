@@ -59,12 +59,12 @@
         align-items: center;
         padding: 20px 0px;
 
-        .host-name {
+        .host-name span {
           font-size: 18px;
           font-weight: 500;
           color: #ff6060;
-          width: 93px;
           text-align: right;
+          display: block;
         }
 
         .host-picture {
@@ -130,11 +130,11 @@
         flex-direction: row-reverse;
         justify-content: space-between;
         align-items: center;
-        height: 33px;
+
         .host-div {
           padding: 0;
 
-          .host-name {
+          .host-name span {
             font-size: 16px;
           }
 
@@ -201,7 +201,7 @@
         .host-div {
           padding: 0;
 
-          .host-name {
+          .host-name span {
             font-size: 12px;
           }
 

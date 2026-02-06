@@ -13,6 +13,8 @@ export default function Logement() {
     return <Navigate to="/error" />;
   }
 
+  const [prenom, nom] = logement.host.name.split(' ');
+
   return (
     <div className="logement-annonce-item">
       <Carrousel pictures={logement.pictures} title={logement.title} />
@@ -37,7 +39,10 @@ export default function Logement() {
 
         <div className="rating-host-div">
           <div className="host-div">
-            <div className="host-name">{logement.host.name}</div>
+            <div className="host-name">
+              <span>{prenom}</span>
+              <span>{nom}</span>
+            </div>
             <img
               src={logement.host.picture}
               alt="host-picture"
