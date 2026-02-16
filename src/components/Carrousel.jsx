@@ -16,22 +16,30 @@ export default function Carrousel({ pictures, title }) {
 
   return (
     <div className="carrousel">
-      <div className="btn-group-carrousel">
-        <button onClick={prevImage} className="btn-carrousel">
-          <img src={vector} alt="image precedente" className="previous-icone" />
-        </button>
-        <button onClick={nextImage} className="btn-carrousel">
-          <img src={vector} alt="image suivante" className="next-icone" />
-        </button>
-      </div>
+      {total > 1 && (
+        <div className="btn-group-carrousel">
+          <button onClick={prevImage} className="btn-carrousel">
+            <img
+              src={vector}
+              alt="image precedente"
+              className="previous-icone"
+            />
+          </button>
+          <button onClick={nextImage} className="btn-carrousel">
+            <img src={vector} alt="image suivante" className="next-icone" />
+          </button>
+        </div>
+      )}
       <img
         src={pictures[index]}
         alt={`${title} - ${index}`}
         className="logement-picture"
       />
-      <span className="carrousel-counter">
-        {index + 1}/{total}
-      </span>
+      {total > 1 && (
+        <span className="carrousel-counter">
+          {index + 1}/{total}
+        </span>
+      )}
     </div>
   );
 }
